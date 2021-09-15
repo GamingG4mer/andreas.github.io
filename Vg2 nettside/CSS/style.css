@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    background-color: #2A9D8F;
+    margin: 0px;
+}
+
+/* stilen til headeren*/
+.header {
+    background-color: #264653;
+    padding: 25px;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fl);
+    padding: 25px;
+    grid-gap: 60px;
+}
+
+/* stilen til alle boksene*/
+.box {
+    background-color: #F4A261;
+    border-radius: 10px;
+    border: #E9C46A;
+    border-width: 10px;
+    border-style: solid ;
+    text-align: center;
+}
+
+.box-header {
+    background-color: #E76F51;
+}
+
+/*Plassering av alle boksene*/
+.a {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.b {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.c {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.d {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.e {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
