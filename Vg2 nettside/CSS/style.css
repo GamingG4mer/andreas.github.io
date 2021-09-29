@@ -4,21 +4,43 @@
 body{
     background-color: #2A9D8F;
     margin: 0px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 /* stilen til headeren*/
 .header {
+    display: grid;
     background-color: #264653;
-    padding: 25px;
+    grid-template-columns: repeat(2, auto);
+    padding: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+.header-cosmetics {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    font-size: 1.2em;
+}
+
+.header-buttons {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, auto);
+    font-size: 2em;
+    padding: 1em;
+}
+
+.header-buttons a {
+    text-decoration: none;
+    color: black;
 }
 
 /* info om hvordan boksene skal se ut og plasseres */
 .box-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 75px;
-    /* padding-top: 75px; */
-    grid-gap: 60px;
+    padding: 5em;
+    grid-gap: 5em;
 }
 
 /* stilen til alle boksene*/
@@ -29,12 +51,57 @@ body{
     border-width: 10px;
     border-style: solid ;
     text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .box-header {
     background-color: #E76F51;
 }
+/*For å fikse størrelse på bildet*/
+.home {
+    width: 100%;
+}
 
+#home-link {
+    width: 100px;
+}
+
+
+
+
+/*Dropdown meny*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/*Skjuler dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #264653;
+    padding: 1em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+/*Viser dropdown content*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+  .dropdown-content a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.pdf-container {
+    padding: 5em;
+    width: 90%;
+    height: 90%;
+    border-style: dotted;
+}
 /*
 
 ol.
