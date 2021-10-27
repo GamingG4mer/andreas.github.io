@@ -2,10 +2,15 @@
 /* CSS Document */
 
 body{
-    background-color: #2A9D8F;
+    background-color: #264653;
     margin: 0px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #F4A261;
 }
+
+
+
+
 
 /* stilen til headeren*/
 .header {
@@ -15,13 +20,14 @@ body{
     padding: 20px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
 }
-
+/*Header bilde og tekst*/
 .header-cosmetics {
     display: grid;
     grid-template-columns: repeat(2, auto);
     font-size: 1.2em;
 }
 
+/*navige*/
 .header-buttons {
     display: grid;
     text-align: center;
@@ -29,11 +35,15 @@ body{
     font-size: 2em;
     padding: 1em;
 }
-
+/*stilen til nav buttons*/
 .header-buttons a {
     text-decoration: none;
-    color: black;
+    color: #F4A261;
 }
+
+
+
+
 
 /* info om hvordan boksene skal se ut og plasseres */
 .box-container {
@@ -45,26 +55,81 @@ body{
 
 /* stilen til alle boksene*/
 .box {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
     background-color: #F4A261;
+    border:#E76F51;
     border-radius: 10px;
-    border: #E9C46A;
     border-width: 10px;
-    border-style: solid ;
+    border-style: solid;
+    padding: 10px;
     text-align: center;
+    color: black;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .box-header {
-    background-color: #E76F51;
+    background-color: #77b1ce;
 }
+/*Plassering og stil til CV*/
+.CV-container {
+    /*padding-top: 2%;*/
+    padding-right: 20%;
+    padding-left: 20%;
+    width: 60%;
+    height: 100vh;
+    border-bottom-style: dotted;
+}
+
+
+
+/*Kode til JS spillet*/
+.game-container {
+    display: grid;
+    width: 100%;
+    font-size: 3em;
+    font-family: 'hackbot_free_trialregular';
+    letter-spacing: 5px;
+}
+
+/*Custom font til JS spillet*/
+@font-face {
+    font-family: 'hackbot_free_trialregular';
+    src: url('../Links/webfontkit hackbot/hackbotfreetrial-8mga2-webfont.woff2') format('woff2'),
+         url('../Links/webfontkit hackbot/hackbotfreetrial-8mga2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*stil til knappene i JS spillet*/
+.game-btn {
+    width: fit-content;
+    align-self: center;
+    width: 80px;
+    height: 40px;
+    background-color: #F4A261;
+    border-style: none;
+    border-radius: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+
 /*For å fikse størrelse på bildet*/
-.home {
+.bilde {
     width: 100%;
 }
 
 #home-link {
     width: 100px;
 }
+
+#project-pic {
+    width: 100%;
+}
+
 
 
 
@@ -90,21 +155,18 @@ body{
     display: block;
 }
 
-  .dropdown-content a {
+.dropdown-content a {
     display: block;
     text-decoration: none;
-    color: black;
+    color: #F4A261k;
 }
 
-.pdf-container {
-    padding: 5em;
-    width: 90%;
-    height: 90%;
-    border-style: dotted;
-}
+
+
 /*
 
-ol.
+ol
+.
 :
 
 */
