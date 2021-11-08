@@ -20,35 +20,37 @@
                     <a href="../../index.html">
                         <img class="bilde home" id="home-link" src="../Bilder/placeholder pfp.png" alt="bilde av Andreas">
                     </a>
-                    <h1>Andreas Sitt Portfolio</h1>
+                    <h1>Andreas' Portfolio</h1>
                 </div>
 
                 <!--Navigation buttons i header-->
                 <div class="header-buttons">
 
                     <div class="nav-btn">
-                        <a href="../../index.html">Hjem</a>
+                        <a class="nav-btn fancy_link" href="../../index.html">Hjem</a>
                     </div>
 
                     <div class="nav-btn">
-                        <a href="../HTML/CV.html">CV</a>
+                        <a class="nav-btn fancy_link" href="../HTML/CV.html">CV</a>
                     </div>
                     <!--Dropdown meny-->
                     <div class="nav-btn dropdown">
-                        <span class="nav-btn">Socials</span>
+                        <span class="nav-btn fancy_link">Socials</span>
                         <div class="dropdown-content">
-                            <a href="https://github.com/GamingG4mer" target="_blank">GitHub</a>
-                            <a href="https://twitter.com/GamingGamer321" target="_blank">Twitter</a>
-                            <a href="https://discordapp.com/users/369160072041070634/" target="_blank">Discord</a>
-                            <a href="https://www.youtube.com/channel/UCy9t0Y5hJfCSIDnedhMRNBg" target="_blank">Youtube</a>
+                            <a href="https://github.com/GamingG4mer" target="_blank" class="nav-btn fancy_link">GitHub</a>
+                            <a href="https://twitter.com/GamingGamer321" target="_blank" class="nav-btn fancy_link">Twitter</a>
+                            <a href="https://discordapp.com/users/369160072041070634/" target="_blank" class="nav-btn fancy_link">Discord</a>
+                            <a href="https://www.youtube.com/channel/UCy9t0Y5hJfCSIDnedhMRNBg" target="_blank" class="nav-btn fancy_link">Youtube</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="game-container">
-                <h1 id="countdown">15:00</h1>
-                <button onclick="start()" class="game-btn">Start</button>
+                <h1 class="countdown" id="countdown">15:00</h1>
+                <button onclick="start()" class="game-btn" id=game-btn>Start</button>
+                <a class="game-text">Trykk på den store røde knappen <br> når du tror tiden er på 0</a>
+                <button onclick="stop()" class="game-btn2"></button>
             </div>
         </div>
     </body>
