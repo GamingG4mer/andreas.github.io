@@ -36,12 +36,12 @@ function countdown_update() {
         document.getElementById("countdown").innerHTML = "-1:00";
     }
     else {
-        if (time_dec < 10) {
-            document.getElementById("countdown").innerHTML = "0:0" + (100-time_dec);
+        if (100-time_dec < 10) {
+            document.getElementById("countdown").innerHTML = "-0:0" + (100-time_dec);
         }
 
         else {
-            document.getElementById("countdown").innerHTML = "0:" + (100-time_dec);
+            document.getElementById("countdown").innerHTML = "-0:" + (100-time_dec);
 }   }   }
 
 
@@ -84,7 +84,7 @@ function start() {
         }
 
         //viser highscoren på nettsiden
-        if (100-time_dec < 10) {
+        if (time_dec < 10) {
             document.getElementById("highscore").innerHTML = highscore_sec + ":0" + highscore_dec;
         }
 
