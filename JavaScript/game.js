@@ -36,7 +36,7 @@ function countdown_update() {
         document.getElementById("countdown").innerHTML = "-1:00";
     }
     else {
-        if (100-time_dec < 10) {
+        if ((100-time_dec) < 10) {
             document.getElementById("countdown").innerHTML = "-0:0" + (100-time_dec);
         }
 
