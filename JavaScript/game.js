@@ -84,7 +84,7 @@ function start() {
         }
 
         //viser highscoren på nettsiden
-        if (time_dec < 10) {
+        if (100-time_dec < 10) {
             document.getElementById("highscore").innerHTML = highscore_sec + ":0" + highscore_dec;
         }
 
@@ -100,12 +100,13 @@ function start() {
 
         //Timer
         setInterval(() => {
-
+            
             if (game_state == 3) {
                 countdown_update();
                 return;
             }
 
+            //Stopper tiden når tiden har gått ut
             else if (time_sec <= -1 && time_dec <= 0) {
                 game_state = 3;
                 return;
@@ -116,9 +117,8 @@ function start() {
                 time_sec--;
             }
 
-
             time_dec--;
-
+            console.log(time_sec + ":" + time_dec)
         
             //oppdatere tallet som vises på nettsiden
             if (time_sec >= 10) {
