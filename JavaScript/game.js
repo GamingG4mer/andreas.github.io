@@ -84,7 +84,7 @@ function start() {
         }
 
         //viser highscoren på nettsiden
-        if (time_dec < 10) {
+        if (highscore_dec < 10) {
             document.getElementById("highscore").innerHTML = highscore_sec + ":0" + highscore_dec;
         }
 
