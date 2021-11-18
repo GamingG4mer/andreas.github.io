@@ -118,7 +118,7 @@ function start() {
             }
 
             time_dec--;
-            console.log(time_sec + ":" + time_dec)
+            //console.log(time_sec + ":" + time_dec)
         
             //oppdatere tallet som vises på nettsiden
             if (time_sec >= 10) {
