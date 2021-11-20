@@ -63,7 +63,6 @@ function start() {
     //Stopper spillet og lagrer highscore
     else if (game_state == 2) {
         game_state = 3;
-        document.getElementById("game-btn").innerHTML = "Restart"
 
         //Sjekker om det er ny highscore og viser evt ny highscore
         if (time_sec >= 0) {
@@ -102,13 +101,13 @@ function start() {
         setInterval(() => {
             
             if (game_state == 3) {
+                document.getElementById("game-btn").innerHTML = "Restart"
                 countdown_update();
                 return;
             }
 
             //Stopper tiden når tiden har gått ut
             else if (time_sec <= -1 && time_dec <= 0) {
-                document.getElementById("game-btn").innerHTML = "Restart"
                 game_state = 3;
                 return;
             }
