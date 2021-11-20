@@ -108,6 +108,7 @@ function start() {
 
             //Stopper tiden når tiden har gått ut
             else if (time_sec <= -1 && time_dec <= 0) {
+                document.getElementById("game-btn").innerHTML = "Restart"
                 game_state = 3;
                 return;
             }
