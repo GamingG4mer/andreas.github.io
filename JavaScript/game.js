@@ -112,7 +112,7 @@ function start() {
                 return;
             }
 
-            else if (time_dec < 1) {
+            if (time_dec < 1) {
                 time_dec = 100;
                 time_sec--;
             }

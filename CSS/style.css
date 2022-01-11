@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-body{
+body {
     background-color: #264653;
     margin: 0px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -45,6 +45,25 @@ body{
 
 
 
+.om-meg {
+    display: block;
+    padding: 5rem 35%;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.om-meg-title {
+    text-align: center;
+}
+
+.om-meg-text {
+    text-align: center;
+}
+
+
+
+
+
 /* info om hvordan boksene skal se ut og plasseres */
 .box-container {
     display: grid;
@@ -71,6 +90,7 @@ body{
 .box-header {
     background-color: #77b1ce;
 }
+
 /*Plassering og stil til CV*/
 .CV-container {
     /*padding-top: 2%;*/
@@ -79,6 +99,18 @@ body{
     width: 60%;
     height: 100vh;
     border-bottom-style: dotted;
+}
+
+.project-info {
+    padding: 1rem;
+}
+
+.project-title {
+    font-size: 1.5rem;
+}
+
+.project-text {
+    font-size: 1.2rem;
 }
 
 
@@ -163,6 +195,8 @@ body{
 
 #project-pic {
     width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 
